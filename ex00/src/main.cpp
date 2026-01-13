@@ -6,7 +6,7 @@
 /*   By: mcaro-ro <mcaro-ro@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/13 21:17:27 by mcaro-ro          #+#    #+#             */
-/*   Updated: 2026/01/13 21:26:47 by mcaro-ro         ###   ########.fr       */
+/*   Updated: 2026/01/13 22:09:44 by mcaro-ro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,20 +19,20 @@ int main(void)
 
 	std::cout << "\n--- Normal Attacks ---"<< std::endl;
 	bob.attack("Alice");
-	alice.takeDamage(3);
+	alice.takeDamage(ClapTrap::defaultAttackDamage);
 
 	std::cout << "\n--- Normal Repairing ---"<< std::endl;
 	alice.beRepaired(5);
 
 	std::cout << "\n--- Bob takes lethal damage ---"<< std::endl;
-	bob.takeDamage(15);
+	bob.takeDamage(ClapTrap::defaultHitPoints + 5);
 
 	std::cout << "\n--- Bob tries to act while dead ---"<< std::endl;
 	bob.attack("Alice");
 	bob.beRepaired(5);
 
 	std::cout << "\n--- Alice spends all her energy ---"<< std::endl;
-	for (int i = 0; i < 11; i++)
+	for (int i = 0; i < ClapTrap::defaultEnergyPoints; i++)
 	{
 		alice.attack("Bob");
 	}
