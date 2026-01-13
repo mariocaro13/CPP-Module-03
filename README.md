@@ -18,7 +18,9 @@ Through a series of four exercises, you will gradually build a family of ClapTra
 	```
 	make clean
 	```
+ 	```
 	make fclean
+	```
 	```
 	make re
 	```
@@ -64,7 +66,7 @@ Focus: inheritance and method overriding.
 	- Method: highFivesGuys.
 Focus: inheritance and specialization.
 
-- ex03 – Now it’s weird! ❌ (optional)
+- ex03 – Now it’s weird! (optional) ❌
 	- Implement DiamondTrap inheriting from both ScavTrap and FragTrap.
 	- Attributes: combines FragTrap’s hit points and attack damage with ScavTrap’s energy points.
 	- Method: whoAmI.
