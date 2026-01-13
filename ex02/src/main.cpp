@@ -6,7 +6,7 @@
 /*   By: mcaro-ro <mcaro-ro@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/13 21:17:27 by mcaro-ro          #+#    #+#             */
-/*   Updated: 2026/01/14 00:16:10 by mcaro-ro         ###   ########.fr       */
+/*   Updated: 2026/01/14 00:22:52 by mcaro-ro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,6 @@ int main(void)
 
 	freddie.attack("Dummy");
 	dummy.takeDamage(freddie.getAttackDamage());
-	std::cout << std::endl;
 
 	std::cout << "\n--- Normal Repairing ---"<< std::endl;
 	bob.beRepaired(ClapTrap::defaultHitPoints);
@@ -79,7 +78,6 @@ int main(void)
 	{
 		freddie.attack("Dummy");
 	}
-	std::cout << std::endl;
 	
 	std::cout << "\n--- Try to act with no energy ---"<< std::endl;
 	bob.attack("Dummy");
@@ -92,7 +90,6 @@ int main(void)
 
 	freddie.attack("Dummy");
 	freddie.beRepaired(5);
-	std::cout << std::endl;
 
 	std::cout << "\n----- SCAVTRAP TEST -----"<< std::endl;
 
